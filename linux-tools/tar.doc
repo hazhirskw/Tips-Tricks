@@ -1,0 +1,6 @@
+#Assume that list of the files which is going to be in the archive file are written in "list" file
+#Following command generate the appropriate archive file
+tar -cvf update.tar -T list
+
+#In order to apply the update file on 'destDirectory'
+tar -xvf update.tar -C destDriectory
