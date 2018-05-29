@@ -1,0 +1,7 @@
+diff -uarN orig new > diff.patch
+
+#To Apply the patch go to orig directory and:
+patch -p1 < <diff.patch>
+
+#To create a update archive go to an empty folder and:
+patch -p1 < <diff.patch>
