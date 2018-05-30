@@ -1,2 +1,5 @@
 #Generate update list between two directory using rsync command
 changlist="`rsync --exclude-from=rsyncexclude.lst -OHcvan --delete new/ old/ | head -n -3 | tail -n +2 | sed 's/ -> .*//g' | sed 's/ => .*//g'`"
+#Usefule options:
+#--ignore-times: ignore the time change of the files while comparison
+#--no-perms: igonre permision comparison
